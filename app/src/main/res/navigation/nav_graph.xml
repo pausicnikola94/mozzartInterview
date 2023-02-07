@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/GamesFragment">
+
+    <fragment
+        android:id="@+id/GamesFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.kino_games.KinoGamesFragment"
+        tools:layout="@layout/fragment_kino_games">
+        <action
+            android:id="@+id/action_KinoGamesFragment_to_KinoGameDetailsFragment"
+            app:destination="@id/KinoGameDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/KinoGameDetailsFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.kino_game_details.KinoGameDetailsFragment"
+        tools:layout="@layout/fragment_kino_game_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/TalonFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.talon.KinoTalonFragment"
+        tools:layout="@layout/fragment_kino_talon">
+    </fragment>
+
+    <fragment
+        android:id="@+id/MoreGamesFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.more_games.KinoMoreGamesFragment"
+        tools:layout="@layout/fragment_kino_more_games">
+    </fragment>
+
+    <fragment
+        android:id="@+id/LiveFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.live.KinoLiveFragment"
+        tools:layout="@layout/fragment_kino_live">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ResultsFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.results.KinoResultsFragment"
+        tools:layout="@layout/fragment_kino_results">
+    </fragment>
+
+    <fragment
+        android:id="@+id/BrziiKinoFragment"
+        android:name="com.mozzartinterview.feature_kino_game.ui.brzzi_kino.BrzziKinoFragment"
+        tools:layout="@layout/fragment_brzzi_kino">
+    </fragment>
+</navigation>
